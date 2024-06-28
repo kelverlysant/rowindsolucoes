@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+    .cabecalho h1 {
+        font-size: 32px;
+    }
+
+    .sobre {
+        font-size: 20px;
+    }
+
+    .nome-empresa {
+        font-size: 100px;
+    }
+
+    .complemento {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cabecalho {
+        padding: 8px; /* Ajuste o padding para telas maiores */
+    }
+
+    .cabecalho h1 {
+        font-size: 40px;
+    }
+
+    .sobre {
+        font-size: 23px;
+    }
+
+    .nome-empresa {
+        font-size: 200px;
+    }
+
+    .complemento {
+        font-size: 100px;
+    }
+}
