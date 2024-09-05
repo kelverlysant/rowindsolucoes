@@ -23,6 +23,7 @@ html {
 
 header {
     height: 20%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -47,6 +48,7 @@ header {
         color: #ffffff;
         margin: 30px;
         font-weight: bolder;
+        flex: 0 1 150px;
     }
 
     a:hover {
@@ -67,7 +69,7 @@ article {
     width: 70%;
     margin: auto;
     position: relative;
-    bottom: 85px;
+    bottom: 50px;
     height: 250px;
     border-radius: 7px;
     font-size: 20px;
