@@ -60,7 +60,7 @@ article {
     text-align: center;
     background-image: url(../img/pacoteimg.png);
     background-size: cover;
-    background-position: center;
+    background-position: 55%;
     color: #000000;
     font-family: "New Amsterdam", sans-serif;
     padding: 15px;
@@ -98,7 +98,7 @@ section.Compromisso {
 
     .container {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: column nowrap;
 
         .imgcompro {
             margin: auto;
@@ -110,33 +110,24 @@ section.Compromisso {
 
         h3 {
             text-align: center;
+            margin: 15px;
+            font-size: 1;
+            color: #feca0a;
+        }
+        p{
+            color: #ffffff;
+            text-align: center;
         }
 
-        .item1 {
+        .item {
             display: flex;
             flex-direction: column;
-            background-color: #c7c6c69c;
+            background-color: #002d5eb6;
             margin: 15px;
             padding: 15px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        .item2 {
-            display: flex;
-            flex-direction: column;
-            background-color: #c7c6c69c;
-            margin: 15px;
-            padding: 15px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        }
-
-        .item3 {
-            display: flex;
-            flex-direction: column;
-            background-color: #c7c6c69c;
-            margin: 15px;
-            padding: 15px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 5px;
+            flex: 0 2 auto;
         }
 
     }
