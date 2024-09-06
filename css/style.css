@@ -222,6 +222,11 @@ main{
         color:var(--cor1);
         text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
+    p{
+        padding: 15px;
+        font-family: var(--font);
+        margin: 30px;
+    }
 }
 .clientes{
     display: flex;
