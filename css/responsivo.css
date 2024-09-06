@@ -23,4 +23,18 @@
         align-items: center;
         justify-content: center;
     }
+    main{
+        .servicos{ a{
+            text-align: center;
+            color: #feca0a;
+            font-weight: bold;
+            background-color: #002d5e;
+            width: 150px;
+            margin: auto;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+    }
 }
