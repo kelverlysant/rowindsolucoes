@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+    article {
+        background-image: url(../img/pacoteimg.png);
+    }
     section.Compromisso {
         .container{
             flex-flow: row nowrap;
