@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
 
 :root {
     --cor1: #002d5e;
     --cor2: #231f20;
     --cor3: #feca0a;
+    --font: "New Amsterdam", sans-serif;
 }
 
 * {
@@ -88,15 +90,16 @@ article {
 }
 
 section.Compromisso {
-    margin: auto;
+    
     h1 {
-        color: #002d5e;
         text-align: center;
-        font-weight: bolder;
-        font-size: 2.2em;
-        font-family: "Outfit", sans-serif;
-        margin-top: 100px;
-        text-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        margin-top: 150px;
+        margin-bottom: 20px;
+        font-family: "New Amsterdam", sans-serif;
+        font-size: 45px;
+        font-weight: 800;
+        color:var(--cor1);
+        text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     .container {
@@ -134,4 +137,79 @@ section.Compromisso {
         }
 
     }
+}
+main{
+    display: flex;
+    flex-flow: column;
+
+
+
+    h1{
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        font-family: "New Amsterdam", sans-serif;
+        font-size: 45px;
+        font-weight: 800;
+        color:var(--cor1);
+        text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .servicos{
+        background-color: #002d5e;
+        margin-bottom: 25px;
+        height: 280px;
+        display: flex;
+        width: 90%;
+        border-top-right-radius: 10px;
+
+
+        .apresent{
+            display: flex;
+            flex-flow: column;
+            background-color: #ffffff;
+            width: 50%;
+            height: 100%;
+        }
+        h2{
+            text-align: center;
+        font-family: "New Amsterdam", sans-serif;
+        font-size: 45px;
+        font-weight: 800;
+        color:var(--cor3);
+        text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        p{
+            padding: 15px;
+            color: #002d5e;
+            text-align: center;
+            font-family: var(--font);
+        }
+        a{
+            text-align: center;
+            color: #feca0a;
+            font-weight: bold;
+            background-color: #002d5e;
+            width: 50%;
+            margin: auto;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        a:hover{
+            color: var(--cor1);
+            transition: 0.5s;
+            background-color: #feca0a;
+        }
+        img{
+            width:50%;
+            border-top-right-radius: 10px;
+
+        }
+    }
+}
+.clientes{
+
+
+    
 }
