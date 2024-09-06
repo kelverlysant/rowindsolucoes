@@ -162,15 +162,15 @@ main{
         margin-bottom: 25px;
         height: 380px;
         display: flex;
-        width: 90%;
-        border-top-right-radius: 10px;
+        width: 100%;
+        
 
 
         .apresent{
             display: flex;
             flex-flow: column;
             background-color: #ffffff;
-            width: 50%;
+            width: 60%;
             height: 100%;
         }
         h2{
@@ -205,7 +205,6 @@ main{
         }
         img{
             width:50%;
-            border-top-right-radius: 10px;
 
         }
     }
