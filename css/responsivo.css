@@ -10,6 +10,14 @@
             height: 500px;
         }
     }
+    main.main-servicos{
+        img{
+            width: 650px;
+        }
+        a{
+            width: 150px;
+         }
+    }
 }
    
 
@@ -36,5 +44,13 @@
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
     }
+    }
+    .main-servicos{
+        img {
+            width: 650px;
+        }
+        a{
+           width: 150px;
+        }
     }
 }
