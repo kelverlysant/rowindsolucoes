@@ -162,7 +162,7 @@ main {
     background-color: #87b4e4;
     margin-bottom: 55px;
     height: 250px;
-    width: 250px;
+    width: 200px;
     flex: 0 1 250px;
     margin: 0 auto;
     border-radius: 15px;
@@ -213,6 +213,24 @@ main {
     transition: 0.5s;
     background-color: #feca0a;
   }
+}
+.botaomenos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5em;
+    color: #002d5e;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 }
 .botaomais{
     display: flex;
@@ -271,11 +289,86 @@ button:hover{
   }
 }
 footer {
-  margin-top: 50px;
   background-color: #002d5e;
-  height: 30%;
-  display: flex;
+  
 }
+footer .logofooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+    img{
+        width: 260px;
+    }
+}
+footer .sect-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 800px;
+    border-top:  2px solid #ffffff;
+}
+footer .sect-footer .box-footer{
+    max-width: 250px;
+    margin-left: 35px;
+    h3{
+        color: #fec90a;
+        margin-bottom: 10px;
+    }
+    
+}
+
+.sect-footer .box-footer a{
+    
+        display: block;
+        color: #ffffff;
+        margin-bottom: 10px;
+        transition: 0.5s;
+}
+.sect-footer .box-footer a:hover{
+    color: var(--cor3);
+}
+
+.box-footer .redes-footer a{
+        display: inline;
+}
+.box-footer .redes-footer button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.box-footer .redes-footer button:hover{
+    background-color: var(--cor3);
+    color: var(--cor1);
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sect {
   opacity: 0;
   filter: blur(1px);

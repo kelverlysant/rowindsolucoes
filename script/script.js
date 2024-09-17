@@ -13,7 +13,15 @@ const sect = document.querySelectorAll('.sect')
 sect.forEach((sec) =>observ.observe(sec))
 
 let mostrar = document.getElementById('botao')
+let diminui = document.getElementById('botaomenos')
 mostrar.onclick = () =>{
-    let desat = document.querySelector('.ativado')
-    desat.classList.remove('ativado')
+    let ativ = document.querySelector('.ativado')
+    ativ.classList.remove('ativado')
+    
+    diminui.onclick = () =>{
+        let desat = document.querySelector('.oculto')
+        desat.classList.add('ativado')
+        
+    }
+
 }
