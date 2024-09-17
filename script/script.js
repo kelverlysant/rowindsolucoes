@@ -11,3 +11,9 @@ const observ = new IntersectionObserver((obs) => {
 const sect = document.querySelectorAll('.sect')
 
 sect.forEach((sec) =>observ.observe(sec))
+
+let mostrar = document.getElementById('botao')
+mostrar.onclick = () =>{
+    let desat = document.querySelector('.ativado')
+    desat.classList.remove('ativado')
+}
