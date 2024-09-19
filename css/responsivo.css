@@ -1,6 +1,10 @@
 @media (min-width: 768px) {
     article {
         background-image: url(../img/pacoteimg.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
     section.Compromisso {
         .container{
