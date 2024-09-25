@@ -1,11 +1,5 @@
 @media (min-width: 768px) {
-    article {
-        background-image: url(../img/pacoteimg.png);
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+
     section.Compromisso {
         .container{
             flex-flow: row nowrap;
@@ -26,6 +20,13 @@
    
 
 @media (min-width: 1024px) {
+    article {
+        background-image: url(../img/pacoteimg.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .item{
         width: 251px;
         
@@ -36,7 +37,8 @@
         justify-content: center;
     }
     main{
-        .servicos{ a{
+        .servicos{
+            a{
             text-align: center;
             color: #feca0a;
             font-weight: bold;
@@ -49,12 +51,7 @@
         }
     }
     }
-    .main-servicos{
-        img {
-            width: 650px;
-        }
-        a{
-           width: 150px;
-        }
+    .sobre-page{
+        max-width: 60%;
     }
 }

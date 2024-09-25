@@ -281,10 +281,9 @@ button:hover{
   margin: 0 auto;
 
   .clientesimg {
-    flex: 0 1 100px;
-    height: 150px;
+    flex: 0 1 200px;
+    height: 120px;
     width: 50px;
-    border-radius: 50%;
     margin: 0 auto;
   }
 }
@@ -352,24 +351,6 @@ footer .sect-footer .box-footer{
     color: var(--cor1);
     transition: .5s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .sect {
   opacity: 0;
