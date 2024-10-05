@@ -20,13 +20,20 @@
    
 
 @media (min-width: 1024px) {
-    article {
-        background-image: url(../img/pacoteimg.png);
-        background-position: left;
+    article, .page-empresa{
+        background-image: url(../img/torre-eolica.jpg);
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+
+        h1 {
+       
+            color: #feca0a;
+        
+         }
+    
     }
+    
     .item{
         width: 251px;
         
