@@ -2,10 +2,11 @@ a{
     font-family: sans-serif;
     text-decoration: none;
 }
-.header{
+.header, .link-page{
     padding-inline: 16px;
-   
+    background-color:var(--cor1) ;
 }
+
 .nav{
     max-width: 1280px;
     height: 70px;
