@@ -21,78 +21,105 @@ html {
   background-color: white;
   color: #000000;
   height: 100dvh;
+  scroll-behavior: smooth;
+  scroll-padding: 20px;
 }
 
-header {
-  height: 20%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 15px;
-  align-items: flex-start;
+.header, .linkspage{
+  padding-inline: 18px;
   background-color: #002d5e;
-
-  ul a {
-    margin: 10px;
-  }
-
-  .titulo {
-    height: 100px;
-  }
+  width: 100%;
+  height: 100px;
 }
+.nav{
+  max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;
 
-.linkspage {
   display: flex;
-  justify-content: center;
-
-  a {
-    color: #ffffff;
-    margin: 30px;
-    font-weight: bolder;
-    flex: 0 1 150px;
-    border: 1px solid #feca0a;
-    padding: 5px;
-  }
-
-  a:hover {
-    color: #feca0a;
-    transition: 0.5s;
-  }
+  justify-content: space-between;
+  align-items: center;
 }
-
-article {
-  text-align: center;
-  background-color: #fec90a;
-  background-size: cover;
-  background-position: 55%;
-  color: #000000;
+.logo{
+  font-size: 40px;
   font-family: "New Amsterdam", sans-serif;
-  padding: 15px;
-  width: 70%;
-  margin: auto;
+  color: #fff;
+  margin-left: 5px;
+}
+.nav-list{
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-list a{
+  font-size: 18px;
+  color: #fff;
+  padding-block: 16px;
+  margin-right: 5px;
+}
+.hamburger{
+  margin-right: 5px;
+  display: none;
+  border: none;
+  background: none;
+  border-top: 3px solid var(--cor3);
+  cursor: pointer;
+  z-index: 2;
+}
+.hamburger::before, 
+.hamburger::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: var(--cor3);
+  margin-top: 5px;
   position: relative;
-  bottom: 20px;
-  height: 250px;
-  border-radius: 7px;
-  font-size: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-  h1 {
-    font-size: 2em;
-    color: #ffffff;
-    margin-right: 60px;
-  }
-  h2 {
-    color: #002d5e;
-    font-size: 2em;
-  }
-  p {
-    margin-top: 10px;
-    color:var(--cor1);
-  }
+  transition: 0.5s;
 }
 
+main .sobre{
+  margin: 20px auto;
+  max-width: 1030px;
+}
+.sobre-container{
+  margin: 90px;
+  display: flex;
+}
+.img-container{
+  overflow: hidden;
+}
+.sobre-container img{
+  max-width: 500px;
+  height: 700px;
+  object-fit: cover;
+  transition: 0.8s ease-in-out;
+ 
+}
+.sobre-container img:hover{
+  scale: 105%;
+}
+.sobre-container .apresentacao h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  color: var(--cor3);
+  margin: 10px 25px;
+}
+.sobre-container .apresentacao p{
+  width: 350px;
+  margin: 25px 15px;
+  font-size: 1.3em;
+}
+.apresentacao a{
+  font-size: 1.2em;
+  color: #002d5e;
+  font-weight: bold;
+  margin-left: 15px;
+  transition: 0.5s ease;
+}
+.sobre-container .apresentacao a:hover{
+  border-bottom: 2px solid var(--cor3);
+}
 section.Compromisso {
   h1 {
     text-align: center;
@@ -139,121 +166,73 @@ section.Compromisso {
     }
   }
 }
-span {
-  h1 {
-    margin-top: 65px;
-    text-align: center;
-    font-family: "New Amsterdam", sans-serif;
-    font-size: 2.5em;
-    font-weight: 800;
-    color: var(--cor1);
-  }
+.servicos {
+  background-color: #002d5e07;
 }
-main {
+.servicos .aprent-serv{
+  margin-top: 90px;
+}
+.servicos .aprent-serv h3, span{
   display: flex;
-  flex-flow: row wrap;
-  max-width: 900px;
+  flex-direction: column;
+  text-align: center;
+}
+.servicos .aprent-serv span{
+  font-size: 1.2em; 
+  padding: 5px;
+  color: #afafaf;
+  font-family: "New Amsterdam", sans-serif;
+
+}
+.servicos .aprent-serv h3{
+  font-size: 45px;
+  font-family: "New Amsterdam", sans-serif;
+  color: var(--cor1);
+}
+.servicos-container{
   margin: 0 auto;
-  padding: 15px;
+  margin-top: 50px;
+}
+.servicos-container ul{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.box-container{
+  padding: 10px;
+  border-radius: 5px;
+  
 
-  .servicos {
-    background-color: #87b4e4;
-    margin-bottom: 55px;
-    height: 250px;
-    width: 200px;
-    flex: 0 1 250px;
-    margin: 0 auto;
-    border-radius: 15px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-  .oculto{
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 15px;
-  }
-  .ativado{
-    display: none;
-    
-  }
- 
-  h2 {
-    text-align: center;
-    font-family: "New Amsterdam", sans-serif;
-    font-size: 2em;
-    font-weight: 800;
-    color: var(--cor3);
-    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  p {
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-family: var(--font);
-  }
-  a {
-    text-align: center;
-    color: #feca0a;
-    font-weight: bold;
-    background-color: #002d5e;
-    width: 50%;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-  a:hover {
-    color: var(--cor1);
-    transition: 0.5s;
-    background-color: #feca0a;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.botaomenos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
-button{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    font-size: 1.5em;
-    color: #002d5e;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.box-container img{
+  width: 250px;
+  height: 250px;
 }
-
+.box-container h2{
+color: var(--cor3);
+text-align: center;
+font-size: 25px;
+margin: 10px 0;
 }
-.botaomais{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
-button{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    font-size: 1.5em;
-    color: #002d5e;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.box-container p{
+color: var(--cor1);
+text-align: center;
+width: 190px;
 }
-button:hover{
-    color: #fec90a;
-    transition: 0.5s;
+.saibaMais-serv{
+  width: 150px;
+  text-align: center;
+  margin: 30px auto;
+  border-bottom: 2px solid var(--cor3);
+  padding: 10px;
 }
-
+.saibaMais-serv a{
+  color: #002d5e;
+  font-weight: bolder;
 }
-
-
 .princlient {
   h2 {
     padding: 25px;
