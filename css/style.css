@@ -97,17 +97,17 @@ section.Compromisso {
       color: #feca0a;
     }
     p {
-      color: #ffffff;
+      color: var(--cor1);
       text-align: center;
     }
 
     .item {
       display: flex;
       flex-direction: column;
-      background-color:#002d5eda;
+      background-color: #002d5e18;
       margin: 15px;
       padding: 15px;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       border-radius: 5px;
       flex: 0 2 auto;
     }

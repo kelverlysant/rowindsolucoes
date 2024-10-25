@@ -5,6 +5,7 @@ a{
 .header, .link-page{
     padding-inline: 16px;
     background-color:var(--cor1) ;
+    height: 100px;
 }
 
 .nav{
