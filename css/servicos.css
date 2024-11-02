@@ -92,65 +92,80 @@ article {
     color: #002d5e;
   }
 }
-
-main{
-  max-width: 90%;
-  padding: 10px;
-  font-size: 1.1em;
-  margin: 0 auto;
-}
-
-main h1{
-    padding: 5px;
-    margin-top: 50px;
-    font-size: 1.6em;
-    color: var(--cor1);
-}
-
-main p{
-    margin-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-    max-width: 950px;
-    line-height: 30px;
-    hyphens: auto;
-    text-indent: 10px;
-}
-section h1{
-  margin-bottom: 25px;
-}
-.servicos-container{
+.servicos {
+    background-color: #002d5e07;
+  }
+  .servicos .aprent-serv{
+    margin-top: 90px;
+  }
+  .servicos .aprent-serv h3, span{
     display: flex;
     flex-direction: column;
-    margin-bottom: 35px;
-}
-.box-container{
-  background-color: #002d5eda;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 10px;
-  margin: 5px auto;
-  border-radius: 5px;
-}
-.box-container h2{
-  color: var(--cor3);
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.box-container p{
-  color: #fff;
-  text-align: center;
-}
-/* respon-servicos-container */
-
-@media (min-width: 768px){
+    text-align: center;
+  }
+  .servicos .aprent-serv span{
+    font-size: 1.2em; 
+    padding: 5px;
+    color: #afafaf;
+    font-family: "New Amsterdam", sans-serif;
+  
+  }
+  .servicos .aprent-serv h3{
+    font-size: 45px;
+    font-family: "New Amsterdam", sans-serif;
+    color: var(--cor1);
+  }
   .servicos-container{
-    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .servicos-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
   }
   .box-container{
-    margin-right: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-}
+  .box-container img{
+    width: 250px;
+    height: 250px;
+  }
+  .box-container h2{
+  color: var(--cor3);
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 0;
+  }
+  .box-container p{
+  color: var(--cor1);
+  text-align: center;
+  width: 190px;
+  }
+  .saibaMais-serv{
+    width: 150px;
+    text-align: center;
+    margin: 30px auto;
+    border-bottom: 2px solid var(--cor3);
+    padding: 10px;
+  }
+  .saibaMais-serv a{
+    color: #002d5e;
+    font-weight: bolder;
+  }
+
+
+
+
+
+
 
 footer {
     background-color: #002d5e;
