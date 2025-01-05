@@ -17,6 +17,12 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+.logo-container{
+    display: flex;
+}
+.logo-container a{
+    padding-top: 5px;
+}
 .logo{
     font-size: 2.9cap;
     font-family: "New Amsterdam", sans-serif;
@@ -33,6 +39,10 @@ a{
     font-size: 18px;
     color: #fff;
     padding-block: 16px;
+}
+.nav-list a:hover{
+    color: var(--cor3);
+    transition: 0.4s;
 }
 .hamburger{
     display: none;
