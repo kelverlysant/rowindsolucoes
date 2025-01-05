@@ -242,7 +242,9 @@ footer .sect-footer .box-footer{
         color: #fec90a;
         margin-bottom: 10px;
     }
-    
+    p{
+      color: #ffffff;
+    }
 }
 
 .sect-footer .box-footer a{

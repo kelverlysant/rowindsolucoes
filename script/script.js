@@ -11,5 +11,3 @@ const observ = new IntersectionObserver((obs) => {
 const sect = document.querySelectorAll('.sect')
 
 sect.forEach((sec) =>observ.observe(sec))
-
-
